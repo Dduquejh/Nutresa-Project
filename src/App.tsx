@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
 import { ErrorComponent } from './components/ErrorComponent';
 import { Inicio } from './components/pages/Inicio';
-import { Datos } from './components/pages/datos';
+import { Datos } from './components/pages/Datos';
 
 function App() {
   return (
