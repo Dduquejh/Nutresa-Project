@@ -22,25 +22,25 @@ export const Sidebar = () => {
                     {/* Banco de datos */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
                         <span className="text-2xl">💾</span>
-                        <Link to="/database" className="text-gray-800 hover:text-gray-400">Banco de datos</Link>
+                        <Link to="/datos" className="text-gray-800 hover:text-gray-400">Banco de datos</Link>
                     </li>
 
                     {/* Pronósticos */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
                         <span className="text-2xl">📊</span>
-                        <Link to="/forecast" className="text-gray-800 hover:text-gray-400">Pronósticos</Link>
+                        <Link to="/pronosticos" className="text-gray-800 hover:text-gray-400">Pronósticos</Link>
                     </li>
 
                     {/* Análisis de costos */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
                         <span className="text-2xl">💰</span>
-                        <Link to="/cost-analysis" className="text-gray-800 hover:text-gray-400">Análisis de costos</Link>
+                        <Link to="/costos" className="text-gray-800 hover:text-gray-400">Análisis de costos</Link>
                     </li>
 
                     {/* Análisis de escenario */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
                         <span className="text-2xl">⚙️</span>
-                        <Link to="/scenario-analysis" className="text-gray-800 hover:text-gray-400">Análisis de escenario</Link>
+                        <Link to="/escenarios" className="text-gray-800 hover:text-gray-400">Análisis de escenario</Link>
                     </li>
                 </ul>
             </nav>

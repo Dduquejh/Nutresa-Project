@@ -4,31 +4,35 @@ const modules = [
         description: 'Visualiza aquí los datos que tienes cargados en la plataforma.',
         bgColor: 'bg-cyan-100',
         icon: '🗄️', 
+        url: '/datos',
     },
     {
         title: 'Pronósticos',
         description: 'Descripción. Lorem ipsum dolor sit amet.',
         bgColor: 'bg-green-100',
         icon: '📊',
+        url: '/pronosticos',
     },
     {
         title: 'Análisis de costos',
         description: 'Descripción. Lorem ipsum dolor sit amet.',
         bgColor: 'bg-purple-100',
         icon: '💰',
+        url: '/costos',
     },
     {
         title: 'Análisis de escenarios',
         description: 'Descripción. Lorem ipsum dolor sit amet.',
         bgColor: 'bg-pink-100',
         icon: '📋',
+        url: '/escenarios',
     },
 ];
 
 export const Inicio = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <img src="src\Images\Logo2.png" alt="logo" className="w-40 mx-auto mb-8" />
+            <img src="src\Images\Logo2.png" alt="logo" className="w-40 mx-auto mb-8" draggable="false"  />
             <h4 className="text-2xl font-bold mb-8">Visualización de sus módulos</h4>
             <p className="mb-8">
                 En esta sección podrás visualizar todos los módulos que tiene activos para el análisis del impacto financiero de los riesgos climáticos de
