@@ -18,21 +18,21 @@ export const modules: Module[] = [
     },
     {
         title: 'Pronósticos',
-        description: 'Descripción. Lorem ipsum dolor sit amet.',
+        description: 'Visualiza los pronósticos de las variables climáticas para tu organización.',
         bgColor: 'bg-green-100',
         icon: '📊',
         url: '/pronosticos'
     },
     {
         title: 'Análisis de costos',
-        description: 'Descripción. Lorem ipsum dolor sit amet.',
+        description: 'Visualiza los costos asociados a cada variable y los costos en cada una de las trayectorias climáticas.',
         bgColor: 'bg-purple-100',
         icon: '💰',
         url: '/costos'
     },
     {
         title: 'Análisis de escenarios',
-        description: 'Descripción. Lorem ipsum dolor sit amet.',
+        description: 'Visualiza los escenarios climáticos y su impacto financiero en tu organización.',
         bgColor: 'bg-pink-100',
         icon: '📋',
         url: '/escenarios'
@@ -47,10 +47,10 @@ export const Inicio: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 ">
             <img src="src/Images/Logo2.png" alt="logo" className="w-40 mx-auto mb-8" draggable="false" />
-            <h4 className="text-2xl font-bold mb-8">Visualización de sus módulos</h4>
-            <p className="mb-8">
+            <h4 className="text-xl font-bold mb-8">Visualización de sus módulos</h4>
+            <p className="mb-8 line-clamp-2">
                 En esta sección podrás visualizar todos los módulos que tiene activos para el análisis del impacto financiero de los riesgos climáticos de
                 transición en su organización. Podrá visualizar los conjuntos de datos, los pronósticos de las variables, los costos asociados a cada variable y
                 los costos en cada una de las trayectorias climáticas.

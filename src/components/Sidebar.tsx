@@ -21,7 +21,7 @@ export const Sidebar = () => {
 
                     {/* Banco de datos */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
-                        <span className="text-2xl">💾</span>
+                        <span className="text-2xl">🗄️</span>
                         <Link to="/datos" className="text-gray-800 hover:text-gray-400">Banco de datos</Link>
                     </li>
 
@@ -39,7 +39,7 @@ export const Sidebar = () => {
 
                     {/* Análisis de escenario */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
-                        <span className="text-2xl">⚙️</span>
+                        <span className="text-2xl">📋</span>
                         <Link to="/escenarios" className="text-gray-800 hover:text-gray-400">Análisis de escenario</Link>
                     </li>
                 </ul>

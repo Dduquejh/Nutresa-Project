@@ -3,6 +3,11 @@ import { Sidebar } from './components/Sidebar';
 import { ErrorComponent } from './components/ErrorComponent';
 import { Inicio } from './components/pages/Inicio';
 import { Datos } from './components/pages/Datos';
+import { HelpButton } from './components/Help';
+
+import {Pronosticos} from './components/pages/Pronosticos';
+import {Costos} from './components/pages/Costos';
+import {Escenarios} from './components/pages/Escenarios';
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
             <div className="flex">
               <Sidebar />
               <Inicio />
+              <HelpButton />
             </div>
           }
         />
@@ -24,6 +30,37 @@ function App() {
             <div className="flex">
               <Sidebar />
               <Datos />
+              <HelpButton />
+            </div>
+          }
+        />
+        <Route 
+          path="/pronosticos" 
+          element={
+            <div className="flex">
+              <Sidebar />
+              <Pronosticos />
+              <HelpButton />
+            </div>
+          }
+        />
+        <Route 
+          path="/costos" 
+          element={
+            <div className="flex">
+              <Sidebar />
+              <Costos />
+              <HelpButton />
+            </div>
+          }
+        />
+        <Route 
+          path="/escenarios" 
+          element={
+            <div className="flex">
+              <Sidebar />
+              <Escenarios />
+              <HelpButton />
             </div>
           }
         />
