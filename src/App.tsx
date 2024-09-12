@@ -27,7 +27,6 @@ function App() {
           element={
             <div className="flex h-screen">
               <Sidebar />
-              <Inicio />
               <HelpButton />
               <div className="flex flex-col flex-1">
                 <Navbar /> 
@@ -43,29 +42,44 @@ function App() {
           element={
             <div className="flex h-screen">
               <Sidebar />
-              <Datos />
-              <HelpButton />
+              <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="flex-1 p-4">
+                  <Datos />
             </div>
+          </div>
+          <HelpButton />
+        </div>
           }
         />
         <Route 
           path="/pronosticos" 
           element={
-            <div className="flex">
+            <div className="flex h-screen">
               <Sidebar />
-              <Pronosticos />
-              <HelpButton />
+              <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="flex-1 p-4">
+                  <Pronosticos />
             </div>
+          </div>
+          <HelpButton />
+        </div>
           }
         />
         <Route 
           path="/costos" 
           element={
-            <div className="flex">
+            <div className="flex h-screen">
               <Sidebar />
-              <Costos />
-              <HelpButton />
+              <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="flex-1 p-4">
+                  <Costos />
             </div>
+          </div>
+          <HelpButton />
+        </div>
           }
         />
         <Route 
@@ -73,14 +87,13 @@ function App() {
           element={
             <div className="flex">
               <Sidebar />
-              <Escenarios />
-              <HelpButton />
               <div className="flex flex-col flex-1">
                 <Navbar /> 
                 <div className="flex-1 p-4">
-                  <Datos />
+                  <Escenarios />
                 </div>
               </div>
+              <HelpButton />
             </div>
           }
         />
