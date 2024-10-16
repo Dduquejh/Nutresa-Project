@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
     return (
-        <div className="h-screen w-64 bg-gray-100 text-gray-800 flex flex-col">
+        <div className="h-full w-64 bg-gray-100 text-gray-800 flex flex-col">
             {/* Logo */}
             <div className="flex items-center justify-center h-20 my-5">
                 <div className="w-50 h-50 flex items-center justify-center">
-                    <img src="src\Images\Logo.png" alt="Logo" className="w-48 h-48" draggable="false" />
+                    <img src="src/Images/Logo.png" alt="Logo" className="w-48 h-48" draggable="false" />
                 </div>
             </div>
 
             {/* Menú */}
-            <nav className="flex-1 px-4 py-8">
+            <nav className="flex-1 px-4 py-8 overflow-y-auto">
                 <ul className="space-y-4">
                     {/* Inicio */}
                     <li className="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">

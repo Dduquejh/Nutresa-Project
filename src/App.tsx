@@ -5,7 +5,7 @@ import { Inicio } from './components/pages/Inicio';
 import { LogIn } from './components/pages/LogIn';
 import { Datos } from './components/pages/Datos';
 import { HelpButton } from './components/Help';
-
+import { FileDetails } from './components/pages/Datos2';
 import {Pronosticos} from './components/pages/Pronosticos';
 import {Costos} from './components/pages/Costos';
 import {Escenarios} from './components/pages/Escenarios';
@@ -22,6 +22,21 @@ function App() {
           }
         />
         {/* Rutas con la Sidebar y Navbar */}
+        <Route 
+          path="/file/:fileName"
+          element={
+            <div className="flex h-screen">
+              <Sidebar />
+              <HelpButton />
+              <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="flex-1 p-4">
+                  <FileDetails />
+                </div>
+              </div>
+            </div>
+          } 
+        />
         <Route 
           path="/inicio" 
           element={
